@@ -1,0 +1,68 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 18px;
+}
+
+.header-left {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 25px;
+  color: #00277e;
+}
+
+.header-right ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-right a {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 18px;
+  color: #00277e;
+  text-decoration: none;
+  margin-right: 18px;
+}
+
+.firstview {
+  padding-top: 50px;
+  position: relative;
+}
+
+.firstview-img {
+  display: block;
+  width: 700px;
+  z-index: 10;
+  position: absolute;
+  right: 0;
+}
+
+.firstview-position {
+  position: absolute;
+  top: 365px;
+  z-index: 0;
+}
+
+.firstview-title {
+  font-size: 50px;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+}
+
+.firstview-box {
+  width: 1000px;
+  height: 200px;
+  background-color: #00277e;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    display: flex;
+    justify-content: row;
+    flex-direction: column;
+  }
+
+  .header-left {
+    margin-bottom: 10px;
+  }
+}
